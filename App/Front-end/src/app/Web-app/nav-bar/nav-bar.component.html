@@ -1,0 +1,36 @@
+<div class="ms">
+    <div class="nav">
+        <a class="logo-container">
+            <img src="../../../assets/img-navbar/343958848_562057416008897_96267590959828_n.png" alt="" class="logo"
+                routerLink="">
+            <span class="main-name" routerLink="">MedLife</span>
+        </a>
+        <a class="router-container">
+            <nav id="slider">
+                <ul>
+                    <li class="burger" (click)="toggleMenuNew()">
+                        <div class="header-hamburger-menu active">
+                            <span class="hamburger-bar"></span>
+                            <span class="hamburger-bar"></span>
+                        </div>
+                        <div class="header-close-menu">
+                            <span class="hamburger-bar-close"></span>
+                            <span class="hamburger-bar-close"></span>
+                            <span class="hamburger-bar-close"></span>
+                        </div>
+                    </li>
+                    <nav class="nav-menu">
+                        <ul class="nav-list" [class.is-open]="isMenuOpen">
+                            <a routerLink="/zakres-uslug" class="menu-item">Zakres usług</a>
+                            <a routerLink="/cennik" class="menu-item">Cennik</a>
+                            <a routerLink="/nasz-zespol" class="menu-item">Nasz zespół</a>
+                            <a routerLink="/kontakt" class="menu-item">Kontakt</a>
+                            <a routerLink="/blog" class="menu-item">Blog</a>
+                            <a routerLink="/umow-wizyte" class="menu-item-rez">Umów wizytę</a>
+                        </ul>
+                    </nav>
+                </ul>
+            </nav>
+        </a>
+    </div>
+</div>
